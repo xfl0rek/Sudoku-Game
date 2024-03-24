@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="691.0" style="-fx-background-color: #8F8F8F;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.sudoku.view.BoardController">
+   <children>
+      <GridPane fx:id="sudokuBoardGrid" layoutX="60.0" layoutY="67.0" prefHeight="334.0" prefWidth="571.0" AnchorPane.bottomAnchor="67.39999999999998" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="67.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <StackPane layoutX="256.0" layoutY="355.0" prefHeight="30.0" prefWidth="87.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="256.0" AnchorPane.rightAnchor="256.0">
+         <children>
+            <Button fx:id="exit" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="85.0" style="-fx-background-color: orange;" text="%exit" />
+         </children>
+      </StackPane>
+      <ToolBar prefHeight="40.0" prefWidth="691.0" style="-fx-background-color: #8F8F8F;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <Button fx:id="saveGame" mnemonicParsing="false" onAction="#saveGame" style="-fx-background-color: orange;" text="%saveGame" />
+            <Button fx:id="loadGame" mnemonicParsing="false" onAction="#loadGame" style="-fx-background-color: orange;" text="%loadGame" />
+            <Button fx:id="saveToDB" mnemonicParsing="false" onAction="#saveToDB" style="-fx-background-color: orange;" text="%saveToDB" />
+            <Button fx:id="loadFromDB" mnemonicParsing="false" onAction="#loadFromDB" style="-fx-background-color: orange;" text="%loadFromDB" />
+        </items>
+      </ToolBar>
+   </children>
+</AnchorPane>
